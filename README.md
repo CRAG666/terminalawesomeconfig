@@ -12,4 +12,6 @@ Alacrittty and zsh
 
 ### cumstomize promnt [python](https://github.com/CRAG666/beautiful_prompt_py) and [nodejs](https://github.com/CRAG666/optional-prompt_nodejs)
 
+### There are cli tools you need to install, read the .zshrc
+
 
