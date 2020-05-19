@@ -1,0 +1,97 @@
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color
+# Window Customization
+window:
+  dimensions:
+    columns: 100
+    lines: 20
+  padding:
+    x: 5
+    y: 5
+  position:
+    x: 175
+    y: 0
+  decorations: full
+class:
+  gtk_theme_variant: dark
+scrolling:
+  history: 10000
+  multiplier: 3
+background_opacity: .9
+dynamic_title: true
+# Font Customization
+font:
+  normal:
+    family: FuraCode Nerd Font
+    style: Retina
+  bold:
+    family: FuraCode Nerd Font
+    style: Bold
+  italic:
+    family: FuraCode Nerd Font
+    style: Italic
+  size: 13.25
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: false
+  debug:
+    persistent_logging: false
+draw_bold_text_with_bright_colors: true
+
+#+begin_theme
+ # Color Settings (Monokai crag) 
+colors: 
+  primary: 
+    background: "#3e3e3e" 
+    foreground: "#e6e6e6" 
+  normal: 
+    black: "#292a2b" 
+    red: "#ff75b5" 
+    green: "#7ad88e" 
+    yellow: "#FFD866" 
+    blue: "#FC9867" 
+    magenta: "#bb98eb" 
+    cyan: "#8accfe" 
+    white: "#f2f2f2" 
+ 
+  bright: 
+    black: "#676b79" 
+    red: "#ff2c6c" 
+    green: "#7ad88e" 
+    yellow: "#ffd443" 
+    blue: "#ffb86c" 
+    magenta: "#af84eb" 
+    cyan: "#59d3e6" 
+    white: "#e6e6e6" 
+ 
+  dim: 
+    black: "#292a2b" 
+    red: "#ff75b5" 
+    green: "#7ad88e" 
+    yellow: "#FFD866" 
+    blue: "#AC9867" 
+    magenta: "#bb98eb" 
+    cyan: "#8accfe" 
+    white: "#f2f2f2" 
+  ###########################################  
+#+end_theme
+  selection:
+    text: "0xffffff"
+    background: "0xdc3232"
+    white: "0xffffff"
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
